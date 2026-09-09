@@ -2,23 +2,16 @@ const express=require('express');
 
 const app= express();
 
-app.get("/user",(req,res)=>{
-    res.send({firstName:"Vivke",latName:"sharma"});
-});
-app.post("/user",(req,res)=>{
+const { adminAuth, userAuth}= require("./middlewares/auth");
 
-    res.send("Data save in db successfully!");
-});
-
-app.delete("/user",(req,res)=>{
-
-    res.send("Data delete from db successfully!");
-});
-app.use("/hello",(req,res)=>{
+app.use("/admin",adminAuth);
+app.get("/user", userAuth,(req,res,next)=>{
+    //route handler
     res.send("Hello hello!");
+    
 });
-app.use("/test",(req,res)=>{
-    res.send("Hello from server!");
+app.get("/admin/getAllData",(req,res)=>{
+    res.send("All data sent!");
 });
 
 app.listen(3000,()=>{
