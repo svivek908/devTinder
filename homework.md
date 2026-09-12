@@ -69,3 +69,5 @@
 -add time stamp in user schema
 -data sanitization api validation for each feild
 - add api validation patch request and sinup post api
+-install validator
+- explore validator function paas,email
