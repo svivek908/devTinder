@@ -67,3 +67,5 @@
 -create custome vaidation for gender
 - improve the db schema and put all appropriate schema in each feild
 -add time stamp in user schema
+-data sanitization api validation for each feild
+- add api validation patch request and sinup post api
