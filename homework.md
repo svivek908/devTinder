@@ -45,3 +45,25 @@
 -create post signup api for add data to data base
 -push some documnets using api callsmfrom postman
 -useing error handling in api try catch
+
+
+-diff in js object and json
+-ad the express.json middle ware to your app
+-make your signup api dynamic to recive data from  the end user
+-user.findone with duplicate emails ids ,ehich object returned
+-api get user by email
+-api feed api - get /feed - get all the users from the database
+-api -get user by id
+- create delete user api
+-diff patch and put
+-api - create update the user
+-explore modle methods
+-what are option in a model.findoneandupdate methos explore more about it
+-update the user with email id
+
+-eplore schematype options from the documentation
+-add reuired,unique,lowercase,min,minlength,trim
+-add default
+-create custome vaidation for gender
+- improve the db schema and put all appropriate schema in each feild
+-add time stamp in user schema
