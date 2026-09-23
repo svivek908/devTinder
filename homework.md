@@ -79,10 +79,11 @@
   -create login api and create own logic
     - compsre passwor and thorw the error password is invalid
 
-    -install cookies parser
-    -just dummy cooikes parser
-    -create get profile api and check if get the cookies
-    - in login api create jwt token with email and passowrd verifictaion
-      -read the cookies inside your profie api and find the user data
-      -userAuth middleware
-      -set expiry in jwt and cookies
+-install cookies parser
+-just dummy cooikes parser
+-create get profile api and check if get the cookies
+
+- in login api create jwt token with email and passowrd verifictaion
+  -read the cookies inside your profie api and find the user data
+  -userAuth middleware
+  -set expiry in jwt and cookies
